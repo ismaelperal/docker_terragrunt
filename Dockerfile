@@ -1,7 +1,7 @@
-FROM alpine
+FROM alpine:3
 
-ARG TERRAFORM_VERSION
-ARG TERRAGRUNT_VERSION
+ENV TERRAFORM_VERSION="0.12.24"
+ENV TERRAGRUNT_VERSION="0.23.12"
 
 # Shell (zsh)
 RUN echo "===> Installing zsh..."         && \
@@ -26,5 +26,4 @@ RUN echo "===> Installing Terragrunt..."  && \
 
 ENV PS1="%/ %# "
 
-WORKDIR /live
 ENTRYPOINT [ "/bin/zsh" ]
