@@ -1,7 +1,7 @@
 FROM alpine:3
 
-ENV TERRAFORM_VERSION="0.12.24"
-ENV TERRAGRUNT_VERSION="0.23.12"
+ENV TERRAFORM_VERSION="0.12.26"
+ENV TERRAGRUNT_VERSION="0.23.27"
 
 # Shell (zsh)
 RUN echo "===> Installing zsh..."         && \
